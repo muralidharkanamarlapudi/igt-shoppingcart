@@ -1,0 +1,20 @@
+<!-- <th scope="row">{{ cartItem.id+1 }}</th>
+<td>{{ cartItem.productName }}</td>
+<td>{{ (cartItem.qty * cartItem.price) | currency:'INR' }}$</td>
+<td><a (click)="removeItem(cartItem)"><i class="fas fa-times"></i></a></td> -->
+
+<div class="item">
+  <div class="image">
+    <img  width="70%" [src]="cartItem.image" />
+  </div>
+
+  <div class="description">
+    <span>{{ cartItem.productName }}</span>
+  </div>
+
+  <div class="total-price">{{ (cartItem.qty * cartItem.price)}}$</div>
+
+  <div class="buttons" *ngIf="!hideCrossButton">
+    <span class="delete-btn" (click)="removeItem(cartItem)"></span>
+  </div>
+</div>

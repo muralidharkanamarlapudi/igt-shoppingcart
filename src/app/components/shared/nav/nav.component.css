@@ -1,0 +1,18 @@
+.cart-basket {
+    font-size: 0.6rem;
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(65, 141, 235);
+    border-radius: 50%;
+}
+.text-dark{
+    cursor: pointer;
+}
+.text-dark:hover {
+    color: #fcc607 !important;
+  }
+

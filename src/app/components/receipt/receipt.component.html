@@ -1,0 +1,24 @@
+<div>
+    <h2>Thank you for shopping in IGT...!!!</h2>
+    <h3>Your Reciept Number : {{recieptNumber}}</h3>
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Product name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of totalItems">
+            <th scope="row">{{item.id+1}}</th>
+            <td>{{item.productName}}</td>
+            <td>{{item.price}}$</td>
+          </tr>
+        </tbody>
+      </table>
+      <a [routerLink]="['/']">Continue shopping...!!!</a>
+</div>
+
+

@@ -1,0 +1,18 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+  <h5 class="my-0 mr-md-auto font-weight-normal">
+    <app-header></app-header>
+  </h5>
+  <nav class="my-2 my-md-0 mr-md-3">
+    <a class="p-2 text-dark" (click)="navSelection('ALL')">All</a>
+    <a class="p-2 text-dark" (click)="navSelection('Men')">Men</a>
+    <a class="p-2 text-dark" (click)="navSelection('Women')">Women</a>
+    <a class="p-2 text-dark" (click)="navSelection('Children')">Children</a>
+    <a class="p-2 text-dark" (click)="navSelection('Sports')">Sports</a>
+    <a (click)="navSelection('showCart')" class="cart position-relative d-inline-flex">
+      <i class="fas fa fa-shopping-cart fa-lg"></i>
+      <span class="cart-basket d-flex align-items-center justify-content-center">
+        {{cartItemsCount}}
+        </span>
+    </a>
+  </nav>
+</div>
