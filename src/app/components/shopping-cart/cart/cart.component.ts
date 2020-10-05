@@ -34,6 +34,7 @@ export class CartComponent implements OnInit {
   cartItemRemoved(removingItem : Product){
     console.log(removingItem)
     this.cartItems = this.cartItems.filter(res=> res.id !== removingItem.id);
+    this.msg.setCartItemsCount(this.cartItems.length)
     this. calcCartTotal();
   }
 
